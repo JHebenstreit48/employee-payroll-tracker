@@ -4,16 +4,58 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-}
+    let firstName = prompt("Enter first name:");
+    let lastName = prompt("Enter last name");
+    let salary = prompt("Enter salary");
+    
+
+// 1. create an empty array
+const collectEmployees = []
+
+// 2. put the information in an object that looks like example in BootCamp Spot
+
+let employees = {
+    
+  firstName: "",
+  lastName: "",
+  salary: 0,
+
+};
+
+  console.log(firstName);
+  console.log(lastName);
+  console.log(salary);
+
+// 3. Ask the user if they want to add more employees or exit
+
+
+// 4.retun the array of employees
+
+let  = collectEmployees();
+  return [];
+
+  
+} 
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
 }
 
+console.log(employeesArray);
+
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+
+function employeesArray(max) {
+  return Math.floor(Math.random() * max);
+}
+
+console.log(employeesArray());
+console.log(Math.random())
+
 }
 
 /*
