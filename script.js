@@ -1,59 +1,60 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+// create an empty array
+const collectEmployeeData = [];
+
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
+
+let EmployeesBool = true
+
+//create a while loop
+  while(EmployeesBool) {
+
+  
+
     let firstName = prompt("Enter first name:");
     let lastName = prompt("Enter last name");
     let salary = prompt("Enter salary");
-    
-
-// 1. create an empty array
-const collectEmployees = []
-
-// 2. put the information in an object that looks like example in BootCamp Spot
+   
+    EmployeesBool = confirm("Do you wish to add another employee?")
 
 let employees = {
     
-  firstName: "",
-  lastName: "",
-  salary: 0,
+  employeeFirstName: firstName,
+  employeeLastName: lastName,
+  employeeSalary: salary,
 
 };
 
-  console.log(firstName);
-  console.log(lastName);
-  console.log(salary);
+collectEmployeeData.push(employees)
 
-// 3. Ask the user if they want to add more employees or exit
+  console.log(collectEmployeeData)
 
+}
 
-// 4.retun the array of employees
-
-let  = collectEmployees();
-  return [];
-
-  
-} 
-
+// retun the array of employees
+return collectEmployeeData
+}
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
 }
 
-console.log(employeesArray);
+// console.log(employeesArray);
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
 
-function employeesArray(max) {
+function employeeDataArray(max) {
   return Math.floor(Math.random() * max);
 }
 
-console.log(employeesArray());
+console.log(employeeDataArray());
 console.log(Math.random())
 
 }
