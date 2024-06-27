@@ -6,14 +6,11 @@ const collectEmployeeData = [];
 
 // Collect employee data
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects
 
 let EmployeesBool = true
 
 //create a while loop
   while(EmployeesBool) {
-
-  
 
     let firstName = prompt("Enter first name:");
     let lastName = prompt("Enter last name");
@@ -41,21 +38,34 @@ return collectEmployeeData
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
+
+  console.log(employeesArray());
+  console.log(Math.random())
+
+}
+
+  function employeesArray(max) {
+    return Math.floor(Math.random() * max);
+
+ 
+  
+
+  
+
   // TODO: Calculate and display the average salary
 }
 
-// console.log(employeesArray);
+// console.log(`The average employee salary between our <numberOfEmployees> employee(s) is ${averageSalaryWithTwoDecimals}`)
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
 
-function employeeDataArray(max) {
-  return Math.floor(Math.random() * max);
-}
+// function employeeDataArray(max) {
+//   return Math.floor(Math.random() * max);
+// }
 
-console.log(employeeDataArray());
-console.log(Math.random())
+
 
 }
 
